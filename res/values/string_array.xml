@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="arr_debate">
+		<item>GMF The Impact on Irish Agriculture</item>
+		<item>Obesity</item>
+		<item>Developing World</item>
+		<item>Food and Tourism</item>
+		<item>How Irish is your food: Agriculture in the West of Ireland</item>
+		<item>Future of Fisheries</item>
+		<item>Food Safety in Modern Times</item>
+	</string-array>
+	
+	<string-array name="arr_gmf">
+		<item>GMF The Impact on Irish Agriculture</item>
+		<item>Unknown</item>
+		<item>IFA (confirmed)</item>
+	</string-array>
+</resources>

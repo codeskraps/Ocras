@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocras</string>
+	
+	<!-- Launcher -->
+	<string name="txt_debate">The Great Debates</string>
+	<string name="txt_talk">The Talks</string>
+	<string name="txt_taste">Taste Workshops</string>
+	<string name="txt_children">The Children</string>
+	<string name="txt_market">The Harvest Food Market</string>
+	<string name="txt_community">Galway\'s Food Community</string>
+	<string name="txt_award">The Big Award</string>
+	<string name="txt_feast">The Feast</string>
+	
+	<!-- Debate -->
+	<string name="listacitivity_debate">Public Debates</string>
+</resources>
