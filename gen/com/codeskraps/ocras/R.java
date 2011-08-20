@@ -9,8 +9,15 @@ package com.codeskraps.ocras;
 
 public final class R {
     public static final class array {
+        public static final int arr_agriculture=0x7f040006;
         public static final int arr_debate=0x7f040000;
+        public static final int arr_developing=0x7f040004;
+        public static final int arr_fisheries=0x7f040007;
         public static final int arr_gmf=0x7f040001;
+        public static final int arr_nutrition=0x7f040002;
+        public static final int arr_obesity=0x7f040003;
+        public static final int arr_safety=0x7f040008;
+        public static final int arr_tourism=0x7f040005;
     }
     public static final class attr {
     }
@@ -26,39 +33,70 @@ public final class R {
         public static final int talk=0x7f020008;
     }
     public static final class id {
-        public static final int etxtsLayout=0x7f070013;
-        public static final int img_award=0x7f07000f;
-        public static final int img_children=0x7f070009;
-        public static final int img_community=0x7f07000d;
-        public static final int img_debate=0x7f070003;
-        public static final int img_feast=0x7f070011;
-        public static final int img_food=0x7f070007;
-        public static final int img_market=0x7f07000b;
-        public static final int img_talk=0x7f070005;
-        public static final int lstText=0x7f070014;
-        public static final int txtDebateChair=0x7f070001;
-        public static final int txtDebateSynopsis=0x7f070002;
-        public static final int txtDebateTitle=0x7f070000;
-        public static final int txtLauncherAward=0x7f070010;
-        public static final int txtLauncherChildren=0x7f07000a;
-        public static final int txtLauncherCommunity=0x7f07000e;
-        public static final int txtLauncherDebate=0x7f070004;
-        public static final int txtLauncherFeast=0x7f070012;
-        public static final int txtLauncherFood=0x7f070008;
-        public static final int txtLauncherMarket=0x7f07000c;
-        public static final int txtLauncherTalk=0x7f070006;
+        public static final int img_award=0x7f070013;
+        public static final int img_children=0x7f07000d;
+        public static final int img_community=0x7f070011;
+        public static final int img_debate=0x7f070007;
+        public static final int img_feast=0x7f070015;
+        public static final int img_food=0x7f07000b;
+        public static final int img_market=0x7f07000f;
+        public static final int img_talk=0x7f070009;
+        public static final int txtDebateChair=0x7f070005;
+        public static final int txtDebateSynopsis=0x7f070006;
+        public static final int txtDebateTitle=0x7f070004;
+        public static final int txtLauncherAward=0x7f070014;
+        public static final int txtLauncherChildren=0x7f07000e;
+        public static final int txtLauncherCommunity=0x7f070012;
+        public static final int txtLauncherDebate=0x7f070008;
+        public static final int txtLauncherFeast=0x7f070016;
+        public static final int txtLauncherFood=0x7f07000c;
+        public static final int txtLauncherMarket=0x7f070010;
+        public static final int txtLauncherTalk=0x7f07000a;
+        public static final int txtListTitle=0x7f070000;
+        public static final int txtRow=0x7f070003;
+        public static final int txtSynop=0x7f070002;
+        public static final int txtTitle=0x7f070001;
     }
     public static final class layout {
-        public static final int debates=0x7f030000;
-        public static final int launcher=0x7f030001;
-        public static final int list_activity=0x7f030002;
-        public static final int list_item=0x7f030003;
+        public static final int custom_list=0x7f030000;
+        public static final int custom_list_item=0x7f030001;
+        public static final int debate_list_item=0x7f030002;
+        public static final int debates=0x7f030003;
+        public static final int launcher=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         /**  Debate 
          */
         public static final int listacitivity_debate=0x7f050009;
+        /**  Talks 
+         */
+        public static final int listacitivity_talk=0x7f05000a;
+        /**  Taste 
+         */
+        public static final int listactivity_taste=0x7f050017;
+        public static final int talk_synop1=0x7f050011;
+        public static final int talk_synop2=0x7f050012;
+        public static final int talk_synop3=0x7f050013;
+        public static final int talk_synop4=0x7f050014;
+        public static final int talk_synop5=0x7f050015;
+        public static final int talk_synop6=0x7f050016;
+        public static final int talk_title1=0x7f05000b;
+        public static final int talk_title2=0x7f05000c;
+        public static final int talk_title3=0x7f05000d;
+        public static final int talk_title4=0x7f05000e;
+        public static final int talk_title5=0x7f05000f;
+        public static final int talk_title6=0x7f050010;
+        public static final int taste_synop1=0x7f05001d;
+        public static final int taste_synop2=0x7f05001e;
+        public static final int taste_synop3=0x7f05001f;
+        public static final int taste_synop4=0x7f050020;
+        public static final int taste_synop5=0x7f050021;
+        public static final int taste_title1=0x7f050018;
+        public static final int taste_title2=0x7f050019;
+        public static final int taste_title3=0x7f05001a;
+        public static final int taste_title4=0x7f05001b;
+        public static final int taste_title5=0x7f05001c;
         public static final int txt_award=0x7f050007;
         public static final int txt_children=0x7f050004;
         public static final int txt_community=0x7f050006;

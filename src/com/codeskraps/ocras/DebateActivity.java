@@ -1,31 +1,51 @@
 package com.codeskraps.ocras;
 
-import android.app.ListActivity;
+import com.codeskraps.ocras.OcrasApplication;
+import com.codeskraps.ocras.OcrasData;
+import com.codeskraps.ocras.R;
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
-public class DebateActivity extends ListActivity {
+public class DebateActivity extends Activity {
 	private static final String TAG = DebateActivity.class.getSimpleName();
 	
-	private CustomListAdapter listItemAdapter = null;
+	private OcrasData oData =  null;
+	private String[] arr_content;
+	private TextView txtTitle = null;
+	private TextView txtChair =  null;
+	private TextView txtSynop = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d(TAG, "onCreate started");
-		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.list_activity);
+		Log.d(TAG, "onCreated Started");
 		
-		String[] arr_debates = (getResources()).getStringArray(R.array.arr_debate);
-		Log.d(TAG, "after getting arr_debate");
+		setContentView(R.layout.debates);
 		
-		listItemAdapter = new CustomListAdapter(this);
-		setListAdapter(listItemAdapter);
+		oData = ((OcrasApplication) getApplication()).getoData();
 		
-		for(String s : arr_debates)
-        {
-        	listItemAdapter.addItem(new ListItem(s));
-        	Log.d(TAG, "Adding: " + s);
-        }
+		Log.d(TAG, "onCreated id: " + oData.getDebateClicked());
+		
+		txtTitle = (TextView) findViewById(R.id.txtDebateTitle);
+		txtChair = (TextView) findViewById(R.id.txtDebateChair);
+		txtSynop = (TextView) findViewById(R.id.txtDebateSynopsis);
+		
+		switch(oData.getDebateClicked()){
+			case 0: arr_content = (getResources()).getStringArray(R.array.arr_gmf); break;
+			case 1: arr_content = (getResources()).getStringArray(R.array.arr_nutrition); break;
+			case 2: arr_content = (getResources()).getStringArray(R.array.arr_obesity); break;
+			case 3: arr_content = (getResources()).getStringArray(R.array.arr_developing); break;
+			case 4: arr_content = (getResources()).getStringArray(R.array.arr_tourism); break;
+			case 5: arr_content = (getResources()).getStringArray(R.array.arr_agriculture); break;
+			case 6: arr_content = (getResources()).getStringArray(R.array.arr_fisheries);	break;
+			case 7:	arr_content = (getResources()).getStringArray(R.array.arr_safety);	break;
+		}
+		
+		txtTitle.setText(arr_content[0]);
+		txtChair.setText(arr_content[1]);
+		txtSynop.setText(arr_content[2]);
 	}
 }

@@ -14,4 +14,36 @@
 	
 	<!-- Debate -->
 	<string name="listacitivity_debate">Public Debates</string>
+	
+	<!-- Talks -->
+	<string name="listacitivity_talk">The Talks, Galway Museum</string>
+	
+	<string name="talk_title1">How to feed a family an a budget</string>
+	<string name="talk_title2">Cooking for fussy eaters</string>
+	<string name="talk_title3">Galway and the famine</string>
+	<string name="talk_title4">Sustainable Cities</string>
+	<string name="talk_title5">Galwlay and the wine trade</string>
+	<string name="talk_title6">How to run a community garden</string>
+	
+	<string name="talk_synop1">A samll budget should never mean a compromise on quality and health. This talk will focus on feeding the family a wholesome and tasty weekly menu when on a budget.</string>
+	<string name="talk_synop2">Every parent has to deal with it at some stage, and many of us have witnessed it at dinner parties. It is not easy to change the mindset of fussy eaters, but we can work around them. Come and check out ingenious ways to get the fussy eater to eat greens.</string>
+	<string name="talk_synop3">How did the famine affect our ancestors? Come to the Galway museum to discover how the famine affected the towns people of Galway both rich and poor. From within the city walls, to the fishing village of the Claddagh.</string>
+	<string name="talk_synop4">How as a city can we learn to be more sustainable, and provide for ourselves into the future, and what are we currently doing, if anything to ensure Galway is a sustainable city.</string>
+	<string name="talk_synop5">The great port of Galway was once a bustling wine port, this talk will delve into the ports rich history in the wine trade, and reveal commodity long lost in the city.</string>
+	<string name="talk_synop6">With a great increase in home grown and community gardens this talk will reveal everything to set up your very own community garden, when to pant, when to weed, and you need to get started.</string>
+	
+	<!-- Taste -->
+	<string name="listactivity_taste">Taste Workshops</string>
+	
+	<string name="taste_title1">Smoked Salmon and whiskey</string>
+	<string name="taste_title2">Honey and Meale</string>
+	<string name="taste_title3">West of Ireland Cheese</string>
+	<string name="taste_title4">The Great Irish Black Puddings</string>
+	<string name="taste_title5">Craft Beer From Ireland</string>
+	
+	<string name="taste_synop1">Sample a selection of smoked salmon from smokeries inthe West of Ireland matched with Irish Whiskeys</string>
+	<string name="taste_synop2">A chance to meet and taste some of the unique honeys produced in the Burren and West of Ireland accompained by a glass of meade. Not to mention the delicious combination of honey and blue cheese.</string>
+	<string name="taste_synop3">Come along and sample some of the finest cheeses from the West of Ireland, paired with beers, wine and local breads.</string>
+	<string name="taste_synop4">A chance to taste some of Irelands few remanining fresh blood puddings and to meet their makers: Ed Hick (Co. Dublin), Jack McCarthy (Kanturk), and Seamus Kelly (Newport).</string>
+	<string name="taste_synop5">The reassendence of craft brewing in Ireland will be on display, Here you will have a change to taste the new craft beers from Dungarvan, Belfast, Carlow, Cork, and of course our own Galway Hooker.</string>
 </resources>

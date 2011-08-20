@@ -46,13 +46,9 @@ public class LauncherActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
-		case R.id.img_debate:
-			LauncherActivity.this.startActivity(new Intent(LauncherActivity.this, DebateActivity.class));
-			break;
-		case R.id.img_talk:
-			break;
-		case R.id.img_food:
-			break;
+		case R.id.img_debate:		LauncherActivity.this.startActivity(new Intent(LauncherActivity.this, DebateListActivity.class)); break;
+		case R.id.img_talk:			LauncherActivity.this.startActivity(new Intent(LauncherActivity.this, TalksListAcitivity.class)); break;
+		case R.id.img_food:			LauncherActivity.this.startActivity(new Intent(LauncherActivity.this, TasteListActivity.class));  break;
 		case R.id.img_children:
 			break;
 		case R.id.img_market:

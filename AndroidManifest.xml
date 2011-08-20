@@ -5,7 +5,11 @@
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="7" />
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <application 
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name"
+    	android:name="OcrasApplication">
+    	
         <activity android:name=".LauncherActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -15,12 +19,20 @@
         </activity>
         
         <activity
-        	android:name=".DebateActivity"
+        	android:name=".DebateListActivity"
         	android:label="@string/app_name" />
         	
         <activity 
-        	android:name=".GMFActivity"
+        	android:name=".DebateActivity"
         	android:label="@string/app_name" />
 
+		<activity
+			android:name=".TalksListAcitivity"
+			android:label="@string/app_name" />
+			
+		<activity 
+			android:name=".TasteListActivity"
+			android:label="@string/app_name" />
+			
     </application>
 </manifest>

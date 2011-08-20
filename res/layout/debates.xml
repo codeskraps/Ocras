@@ -6,18 +6,25 @@
   android:layout_height="match_parent">
   
     <TextView 
-    	android:id="@+id/txtDebateTitle" 
+    	android:id="@+id/txtDebateTitle"
+    	android:text=""
+    	android:textSize="30sp"
     	android:layout_width="wrap_content" 
     	android:layout_height="wrap_content" />
     	
     <TextView 
-    	android:id="@+id/txtDebateChair" 
+    	android:id="@+id/txtDebateChair"
+    	android:text=""
+    	android:textStyle="italic"
     	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content" />
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dp" />
     	
     <TextView 
-    	android:id="@+id/txtDebateSynopsis" 
+    	android:id="@+id/txtDebateSynopsis"
+    	android:text="" 
     	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content" />
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dp" />
     
 </LinearLayout>

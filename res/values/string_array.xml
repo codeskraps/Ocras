@@ -2,6 +2,7 @@
 <resources>
 	<string-array name="arr_debate">
 		<item>GMF The Impact on Irish Agriculture</item>
+		<item>Nutrition/Allergies</item>
 		<item>Obesity</item>
 		<item>Developing World</item>
 		<item>Food and Tourism</item>
@@ -14,5 +15,47 @@
 		<item>GMF The Impact on Irish Agriculture</item>
 		<item>Unknown</item>
 		<item>IFA (confirmed)</item>
+	</string-array>
+	
+	<string-array name="arr_nutrition">
+		<item>Nutrition/Allergies</item>
+		<item>Jackie Jones</item>
+		<item>Have we inflicted allergies upon ourselves, and how do wwe deal with them?\nThis debate will discuss the issue of how allergies have been caused and why they are becoming more prevalent in our society.\nThe debate will address whether we can prevent the spread of allergies, and how to deal with them.</item>
+	</string-array>
+	
+	<string-array name="arr_obesity">
+		<item>Obesity</item>
+		<item>Sarah Burke health policy analyst (Rte/TV3)</item>
+		<item>Our children are now 4 st heavier than in the 1970\'s: Should we as a nation be concerned about this? Is it our governments reponsibility to intervene? What are the contributing factors: education/food poverty?</item>
+	</string-array>
+	
+	<string-array name="arr_developing">
+		<item>Developing Word</item>
+		<item>Patrick Towers</item>
+		<item>What are the main causes of food poverty in the global environment? How does access to resources affect the distribution of food aid in stricken countries?\nWhat is the relationship of Global economic systems to food poverty?\nWhat can be done on a local level?</item>
+	</string-array>
+	
+	<string-array name="arr_tourism">
+		<item>Food and Tourism</item>
+		<item>Ella McSweeney, agriculture and food journalist</item>
+		<item>Why do people travel to Ireland? The people, the culture, and the Guinness?\nTourism figures point to a trend of walking, fishing, golfing, and cycling holidays. However no matter the purpose they must all eat, and meanwhile the Irish culinary world is making its mark with the best sourced and presented food.\nOur panel will look at the comodity of Irish food, and why we undersell ourselves when it comes to Irish food.</item>
+	</string-array>
+	
+	<string-array name="arr_agriculture">
+		<item>How Irish is your food: Agriculture in the West of Ireland</item>
+		<item>Kevin Sheridan, Sheridans Cheesemongers</item>
+		<item>IFA, Professor Michael Cuddy NUIG, Teagasc, ICMSA, Kevin Sheridan\nWhat is the future for agriculture in Ireland?\nCan samll producers work together to create a viable and sustainable market for their products?</item>
+	</string-array>
+	
+	<string-array name="arr_fisheries">
+		<item>Future of Fisheries</item>
+		<item>Frank Flemmings</item>
+		<item>What is the true cost of fish in a modern Ireland?\nWhat impact will our fishing practices have on the future of the Irish fishing industry?\nWhy is there an ocean bursting with incredibly tasty fish that we will not eat because we have never heard them?\nA debate on the current state of the fisheries, where it is going, and at what cost to customers, businesses and industry in Ireland.</item>
+	</string-array>
+	
+	<string-array name="arr_safety">
+		<item>Food Satety in Modern Times</item>
+		<item>Proff. Martin McCormican</item>
+		<item>Blank</item>
 	</string-array>
 </resources>
