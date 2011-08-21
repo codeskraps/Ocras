@@ -57,8 +57,7 @@ public class LauncherActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.img_award:
 			break;
-		case R.id.img_feast:
-			break;
+		case R.id.img_feast:		LauncherActivity.this.startActivity(new Intent(LauncherActivity.this, MapViewActivity.class));  break;
 		}
 	}
 }
