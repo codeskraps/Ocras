@@ -30,7 +30,8 @@ public final class R {
         public static final int food=0x7f020005;
         public static final int icon=0x7f020006;
         public static final int market=0x7f020007;
-        public static final int talk=0x7f020008;
+        public static final int pin=0x7f020008;
+        public static final int talk=0x7f020009;
     }
     public static final class id {
         public static final int img_award=0x7f070013;
@@ -41,6 +42,7 @@ public final class R {
         public static final int img_food=0x7f07000b;
         public static final int img_market=0x7f07000f;
         public static final int img_talk=0x7f070009;
+        public static final int mapView=0x7f070017;
         public static final int txtDebateChair=0x7f070005;
         public static final int txtDebateSynopsis=0x7f070006;
         public static final int txtDebateTitle=0x7f070004;
