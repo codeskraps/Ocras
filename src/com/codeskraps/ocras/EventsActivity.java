@@ -1,21 +1,23 @@
 package com.codeskraps.ocras;
 
 import android.app.Activity;
-import android.graphics.Color;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
-import android.view.ViewGroup.MarginLayoutParams;
-import android.widget.AnalogClock;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EventsActivity extends Activity implements OnClickListener{
+public class EventsActivity extends Activity implements OnClickListener {
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -164,7 +166,43 @@ public class EventsActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		Toast.makeText(this, "id: " + v.getId(), Toast.LENGTH_SHORT).show();
+		//Toast.makeText(this, "id: " + v.getId(), Toast.LENGTH_SHORT).show();
+	
+		showDialog(v.getId());	
 	}
 
+	@Override
+    protected Dialog onCreateDialog(int id) {
+		
+		switch (id) {
+       	       	
+       	case 1:
+       		String[] arr_layouts = (getResources()).getStringArray(R.array.arr_nutrition);
+       		
+       		LayoutInflater inflater = (LayoutInflater) EventsActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+       		View layout = inflater.inflate(R.layout.custom_dialog, (ViewGroup) findViewById(R.id.layout_root));
+
+       		AlertDialog.Builder builder = new AlertDialog.Builder(EventsActivity.this);
+       		builder.setView(layout);
+       		AlertDialog alertDialog = builder.create();
+       		
+       		TextView text = (TextView) layout.findViewById(R.id.dialog_text_guess);
+       		text.setText(arr_layouts[1]);
+       		
+       		TextView text2 = (TextView) layout.findViewById(R.id.dialog_text_summary);
+       		text2.setText(arr_layouts[2]);
+       		
+       		alertDialog.setTitle(arr_layouts[0]);
+       		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+
+                    /* User clicked OK so do some stuff */
+                }
+            });
+       		
+       		return alertDialog;
+       		       		
+       	default: return null;
+		}
+	}
 }

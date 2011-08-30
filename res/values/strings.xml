@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ocras</string>
+    <string name="ok">Ok</string>
 	
 	<!-- Launcher -->
 	<string name="txt_debate">The Great Debates</string>

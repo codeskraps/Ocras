@@ -52,66 +52,71 @@ public final class R {
         public static final int taste_background_3=0x7f020015;
     }
     public static final class id {
-        public static final int item=0x7f080008;
-        public static final int linearAward=0x7f080006;
-        public static final int linearChildren=0x7f080003;
-        public static final int linearCommnunity=0x7f080005;
-        public static final int linearDebate=0x7f080000;
-        public static final int linearFeast=0x7f080007;
-        public static final int linearMarket=0x7f080004;
-        public static final int linearTalk=0x7f080001;
-        public static final int linearTaste=0x7f080002;
-        public static final int mapView=0x7f080009;
+        public static final int dialog_text_guess=0x7f080001;
+        public static final int dialog_text_summary=0x7f080002;
+        public static final int item=0x7f08000b;
+        public static final int layout_root=0x7f080000;
+        public static final int linearAward=0x7f080009;
+        public static final int linearChildren=0x7f080006;
+        public static final int linearCommnunity=0x7f080008;
+        public static final int linearDebate=0x7f080003;
+        public static final int linearFeast=0x7f08000a;
+        public static final int linearMarket=0x7f080007;
+        public static final int linearTalk=0x7f080004;
+        public static final int linearTaste=0x7f080005;
+        public static final int mapView=0x7f08000c;
     }
     public static final class layout {
-        public static final int event=0x7f030000;
-        public static final int item=0x7f030001;
-        public static final int map_view=0x7f030002;
-        public static final int tab=0x7f030003;
+        public static final int custom_dialog=0x7f030000;
+        public static final int event=0x7f030001;
+        public static final int item=0x7f030002;
+        public static final int map_view=0x7f030003;
+        public static final int tab=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
         /**  Debate 
          */
-        public static final int listacitivity_debate=0x7f060009;
+        public static final int listacitivity_debate=0x7f06000a;
         /**  Talks 
          */
-        public static final int listacitivity_talk=0x7f06000a;
+        public static final int listacitivity_talk=0x7f06000b;
         /**  Taste 
          */
-        public static final int listactivity_taste=0x7f060017;
-        public static final int talk_synop1=0x7f060011;
-        public static final int talk_synop2=0x7f060012;
-        public static final int talk_synop3=0x7f060013;
-        public static final int talk_synop4=0x7f060014;
-        public static final int talk_synop5=0x7f060015;
-        public static final int talk_synop6=0x7f060016;
-        public static final int talk_title1=0x7f06000b;
-        public static final int talk_title2=0x7f06000c;
-        public static final int talk_title3=0x7f06000d;
-        public static final int talk_title4=0x7f06000e;
-        public static final int talk_title5=0x7f06000f;
-        public static final int talk_title6=0x7f060010;
-        public static final int taste_synop1=0x7f06001d;
-        public static final int taste_synop2=0x7f06001e;
-        public static final int taste_synop3=0x7f06001f;
-        public static final int taste_synop4=0x7f060020;
-        public static final int taste_synop5=0x7f060021;
-        public static final int taste_title1=0x7f060018;
-        public static final int taste_title2=0x7f060019;
-        public static final int taste_title3=0x7f06001a;
-        public static final int taste_title4=0x7f06001b;
-        public static final int taste_title5=0x7f06001c;
-        public static final int txt_award=0x7f060007;
-        public static final int txt_children=0x7f060004;
-        public static final int txt_community=0x7f060006;
+        public static final int listactivity_taste=0x7f060018;
+        public static final int ok=0x7f060001;
+        public static final int talk_synop1=0x7f060012;
+        public static final int talk_synop2=0x7f060013;
+        public static final int talk_synop3=0x7f060014;
+        public static final int talk_synop4=0x7f060015;
+        public static final int talk_synop5=0x7f060016;
+        public static final int talk_synop6=0x7f060017;
+        public static final int talk_title1=0x7f06000c;
+        public static final int talk_title2=0x7f06000d;
+        public static final int talk_title3=0x7f06000e;
+        public static final int talk_title4=0x7f06000f;
+        public static final int talk_title5=0x7f060010;
+        public static final int talk_title6=0x7f060011;
+        public static final int taste_synop1=0x7f06001e;
+        public static final int taste_synop2=0x7f06001f;
+        public static final int taste_synop3=0x7f060020;
+        public static final int taste_synop4=0x7f060021;
+        public static final int taste_synop5=0x7f060022;
+        public static final int taste_title1=0x7f060019;
+        public static final int taste_title2=0x7f06001a;
+        public static final int taste_title3=0x7f06001b;
+        public static final int taste_title4=0x7f06001c;
+        public static final int taste_title5=0x7f06001d;
+        public static final int txt_award=0x7f060008;
+        public static final int txt_children=0x7f060005;
+        public static final int txt_community=0x7f060007;
         /**  Launcher 
          */
-        public static final int txt_debate=0x7f060001;
-        public static final int txt_feast=0x7f060008;
-        public static final int txt_market=0x7f060005;
-        public static final int txt_talk=0x7f060002;
-        public static final int txt_taste=0x7f060003;
+        public static final int txt_debate=0x7f060002;
+        public static final int txt_feast=0x7f060009;
+        public static final int txt_market=0x7f060006;
+        public static final int txt_talk=0x7f060003;
+        public static final int txt_taste=0x7f060004;
     }
     public static final class style {
         public static final int ImageLauncher=0x7f070001;

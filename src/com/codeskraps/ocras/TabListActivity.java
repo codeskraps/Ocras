@@ -22,20 +22,20 @@ public class TabListActivity extends TabActivity {
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
 	    spec = tabHost.newTabSpec("Events").setIndicator("Events", 
-	                      res.getDrawable(R.drawable.ic_tab_artists))
+	                      res.getDrawable(android.R.drawable.ic_menu_sort_by_size))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
 	    // Do the same for the other tabs
 	    intent = new Intent().setClass(this, CalendarActivity.class);
 	    spec = tabHost.newTabSpec("Calendar").setIndicator("Calendar",
-	                      res.getDrawable(R.drawable.ic_tab_artists))
+	                      res.getDrawable(android.R.drawable.ic_menu_today))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
 	    intent = new Intent().setClass(this, MapViewActivity.class);
 	    spec = tabHost.newTabSpec("Map").setIndicator("Map",
-	                      res.getDrawable(R.drawable.ic_tab_artists))
+	                      res.getDrawable(android.R.drawable.ic_dialog_map))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
