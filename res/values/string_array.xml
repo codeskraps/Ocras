@@ -11,6 +11,23 @@
 		<item>Food Safety in Modern Times</item>
 	</string-array>
 	
+	<string-array name="arr_talk">
+		<item>How to feed a family on a budget</item>
+		<item>Cooking for fussy eaters</item>
+		<item>Galway and the famine</item>
+		<item>Sustainable Cities</item>
+		<item>Galwlay and the wine trade</item>
+		<item>How to run a community garden</item>
+	</string-array>
+	
+	<string-array name="arr_taste">
+		<item>Smoked Salmon and whiskey</item>
+		<item>Honey and Meale</item>
+		<item>West of Ireland Cheese</item>
+		<item>The Great Irish Black Puddings</item>
+		<item>Craft Beer From Ireland</item>
+	</string-array>
+	
 	<string-array name="arr_gmf">
 		<item>GMF The Impact on Irish Agriculture</item>
 		<item>Unknown</item>

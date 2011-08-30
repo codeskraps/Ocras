@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#191919">
+<!-- 		android:background="#292929"> -->
+		
+		<!-- Debates -->
+        <TextView 
+        	android:text="@string/txt_debate" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:padding="5dp"
+        	android:background="#80303030" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearDebate"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp" />
+				
+		</HorizontalScrollView>	
+	
+		<!-- Talks -->
+		<TextView 
+        	android:text="@string/txt_talk" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:padding="5dp"
+        	android:background="#80303030" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearTalk"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#FFF" />
+				
+		</HorizontalScrollView>
+		
+		<!-- Taste -->
+		<TextView 
+        	android:text="@string/txt_taste" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:padding="5dp"
+        	android:background="#80303030" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearTaste"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#FFF" />
+				
+		</HorizontalScrollView>
+		
+		<!-- Children -->
+		<TextView 
+        	android:text="@string/txt_children" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearChildren"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#FFF" />
+				
+		</HorizontalScrollView>
+		
+		<!-- Market -->
+		<TextView 
+        	android:text="@string/txt_market" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearMarket"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#3C3B37" />
+				
+		</HorizontalScrollView>
+		
+		<!-- Commnunity -->
+		<TextView 
+        	android:text="@string/txt_community" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearCommnunity"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#3C3B37" />
+				
+		</HorizontalScrollView>
+		
+		<!-- Award -->
+		<TextView 
+        	android:text="@string/txt_award" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearAward"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#3C3B37" />
+				
+		</HorizontalScrollView>	
+		
+		<!-- Feast -->
+		<TextView 
+        	android:text="@string/txt_feast" 
+        	android:textSize="20sp"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" />
+        	
+		<HorizontalScrollView
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout 
+				android:id="@+id/linearFeast"
+		    	android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="5dp"
+				android:background="#3C3B37" />
+				
+		</HorizontalScrollView>	
+	</LinearLayout>
+</ScrollView>

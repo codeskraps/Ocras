@@ -21,12 +21,13 @@ public class MapViewActivity extends MapActivity {
 	
 	private MapController mapController;
 	private MapView mapView;
+	private long GPSupdateInterval;         // In milliseconds
+	private float GPSmoveInterval;  
 	private LocationManager locationManager;
-	private GeoUpdateHandler geoUpdate = new GeoUpdateHandler();
-	
-	List<Overlay> mapOverlays;
-	Drawable drawable;
-	CustomItemizedOverlay itemizedOverlay;
+	private GeoUpdateHandler geoUpdateHandler;
+	private List<Overlay> mapOverlays;
+	private Drawable drawable;
+	private CustomItemizedOverlay itemizedOverlay;
 
 	@Override
 	protected void onCreate(Bundle icicle) {
@@ -39,9 +40,13 @@ public class MapViewActivity extends MapActivity {
 		mapView.setStreetView(true);
 		mapController = mapView.getController();
 		mapController.setZoom(14); // Zoon 1 is world view
+		
+		GPSupdateInterval = 5000;
+        GPSmoveInterval = 1;
+		geoUpdateHandler = new GeoUpdateHandler();
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0,
-				0, geoUpdate);
+		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, GPSupdateInterval,
+				GPSmoveInterval, geoUpdateHandler);
 		
 		mapOverlays = mapView.getOverlays();
 		drawable = this.getResources().getDrawable(R.drawable.pin);
@@ -52,6 +57,20 @@ public class MapViewActivity extends MapActivity {
 				
 		mapOverlays.add(itemizedOverlay);
 	}
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		locationManager.removeUpdates(geoUpdateHandler);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, GPSupdateInterval, 
+				GPSmoveInterval, geoUpdateHandler);	
+	}
+
 
 	public class GeoUpdateHandler implements LocationListener {
 
@@ -61,15 +80,18 @@ public class MapViewActivity extends MapActivity {
 			int lng = (int) (location.getLongitude() * 1E6);
 			GeoPoint point = new GeoPoint(lat, lng);
 			mapController.animateTo(point); //	mapController.setCenter(point);
-			locationManager.removeUpdates(geoUpdate);
+			locationManager.removeUpdates(geoUpdateHandler);
 		}
 
 		@Override
 		public void onProviderDisabled(String provider) {
+			locationManager.removeUpdates(geoUpdateHandler);
 		}
 
 		@Override
 		public void onProviderEnabled(String provider) {
+			locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, GPSupdateInterval, 
+					GPSmoveInterval, geoUpdateHandler);	
 		}
 
 		@Override
