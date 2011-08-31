@@ -52,26 +52,29 @@ public final class R {
         public static final int taste_background_3=0x7f020015;
     }
     public static final class id {
-        public static final int dialog_text_guess=0x7f080001;
-        public static final int dialog_text_summary=0x7f080002;
-        public static final int item=0x7f08000b;
-        public static final int layout_root=0x7f080000;
-        public static final int linearAward=0x7f080009;
-        public static final int linearChildren=0x7f080006;
-        public static final int linearCommnunity=0x7f080008;
-        public static final int linearDebate=0x7f080003;
-        public static final int linearFeast=0x7f08000a;
-        public static final int linearMarket=0x7f080007;
-        public static final int linearTalk=0x7f080004;
-        public static final int linearTaste=0x7f080005;
-        public static final int mapView=0x7f08000c;
+        public static final int dialog_text_debate_guess=0x7f080001;
+        public static final int dialog_text_debate_summary=0x7f080002;
+        public static final int dialog_text_summary=0x7f080004;
+        public static final int item=0x7f08000d;
+        public static final int layout_debate_root=0x7f080000;
+        public static final int layout_root=0x7f080003;
+        public static final int linearAward=0x7f08000b;
+        public static final int linearChildren=0x7f080008;
+        public static final int linearCommnunity=0x7f08000a;
+        public static final int linearDebate=0x7f080005;
+        public static final int linearFeast=0x7f08000c;
+        public static final int linearMarket=0x7f080009;
+        public static final int linearTalk=0x7f080006;
+        public static final int linearTaste=0x7f080007;
+        public static final int mapView=0x7f08000e;
     }
     public static final class layout {
-        public static final int custom_dialog=0x7f030000;
-        public static final int event=0x7f030001;
-        public static final int item=0x7f030002;
-        public static final int map_view=0x7f030003;
-        public static final int tab=0x7f030004;
+        public static final int custom_debate_dialog=0x7f030000;
+        public static final int custom_dialog=0x7f030001;
+        public static final int event=0x7f030002;
+        public static final int item=0x7f030003;
+        public static final int map_view=0x7f030004;
+        public static final int tab=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
