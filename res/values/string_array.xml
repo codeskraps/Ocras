@@ -28,6 +28,21 @@
 		<item>Craft Beer From Ireland</item>
 	</string-array>
 	
+	<string-array name="arr_chil">
+		<item>Animals at the Museum</item>
+		<item>Bread making</item>
+		<item>Honey in the City</item>
+		<item>Jam making / Butter making</item>
+	</string-array>
+	
+	<string-array name="arr_other">
+		<item>The Harvest Food Market</item>
+		<item>Galway\'s Food Community</item>
+		<item>The Big Award</item>
+		<item>The Feast</item>
+	</string-array>
+	
+	<!-- Debate -->
 	<string-array name="arr_gmf">
 		<item>GMF The Impact on Irish Agriculture</item>
 		<item>Unknown</item>
@@ -75,4 +90,111 @@
 		<item>Proff. Martin McCormican</item>
 		<item>Blank</item>
 	</string-array>
+	
+	<!--
+		 Talks 
+	-->
+	<string-array name="talk_1">
+		<item>How to feed a family on a budget</item>
+		<item>A samll budget should never mean a compromise on quality and health. This talk will focus on feeding the family a wholesome and tasty weekly menu when on a budget.</item>
+	</string-array>
+	
+	<string-array name="talk_2">
+		<item>Cooking for fussy eaters</item>
+		<item>Every parent has to deal with it at some stage, and many of us have witnessed it at dinner parties. It is not easy to change the mindset of fussy eaters, but we can work around them. Come and check out ingenious ways to get the fussy eater to eat greens.</item>
+	</string-array>
+	
+	<string-array name="talk_3">
+		<item>Galway and the famine</item>
+		<item>How did the famine affect our ancestors? Come to the Galway museum to discover how the famine affected the towns people of Galway both rich and poor. From within the city walls, to the fishing village of the Claddagh.</item>
+	</string-array>
+	
+	<string-array name="talk_4">
+		<item>Sustainable Cities</item>
+		<item>How as a city can we learn to be more sustainable, and provide for ourselves into the future, and what are we currently doing, if anything to ensure Galway is a sustainable city.</item>
+	</string-array>
+	
+	<string-array name="talk_5">
+		<item>Galwlay and the wine trade</item>
+		<item>The great port of Galway was once a bustling wine port, this talk will delve into the ports rich history in the wine trade, and reveal commodity long lost in the city.</item>
+	</string-array>
+	
+	<string-array name="talk_6">
+		<item>How to run a community garden</item>
+		<item>With a great increase in home grown and community gardens this talk will reveal everything to set up your very own community garden, when to pant, when to weed, and you need to get started.</item>
+	</string-array>
+	
+	<!-- 
+		Talks 
+	-->
+	<string-array name="taste_1">
+		<item>Smoked Salmon and whiskey</item>
+		<item>Sample a selection of smoked salmon from smokeries inthe West of Ireland matched with Irish Whiskeys</item>
+	</string-array>
+	
+	<string-array name="taste_2">
+		<item>Honey and Meale</item>
+		<item>A chance to meet and taste some of the unique honeys produced in the Burren and West of Ireland accompained by a glass of meade. Not to mention the delicious combination of honey and blue cheese.</item>
+	</string-array>
+	
+	<string-array name="taste_3">
+		<item>West of Ireland Cheese</item>
+		<item>Come along and sample some of the finest cheeses from the West of Ireland, paired with beers, wine and local breads.</item>
+	</string-array>
+	
+	<string-array name="taste_4">
+		<item>The Great Irish Black Puddings</item>
+		<item>A chance to taste some of Irelands few remanining fresh blood puddings and to meet their makers: Ed Hick (Co. Dublin), Jack McCarthy (Kanturk), and Seamus Kelly (Newport).</item>
+	</string-array>
+	
+	<string-array name="taste_5">
+		<item>Craft Beer From Ireland</item>
+		<item>The reassendence of craft brewing in Ireland will be on display, Here you will have a change to taste the new craft beers from Dungarvan, Belfast, Carlow, Cork, and of course our own Galway Hooker.</item>
+	</string-array>
+	
+	<!-- 
+		Children
+	-->
+	<string-array name="chil_1">
+		<item>Animals at the Museum</item>
+		<item>The festival will feature a selection of children’s workshops and demonstrations over the weekend, with a focus on introducing children to the world of food in a practical hands on way. Bring your children to discover how honey is made, join in the bread making workshop, and make your own butter and jam.\n\n<b>Animals at the Museum.</b> A Portable petting farm will be based outside the museum on Saturday and Sunday afternoon.</item>
+	</string-array>
+	
+	<string-array name="chil_2">
+		<item>Bread making</item>
+		<item>The festival will feature a selection of children’s workshops and demonstrations over the weekend, with a focus on introducing children to the world of food in a practical hands on way. Bring your children to discover how honey is made, join in the bread making workshop, and make your own butter and jam.\n<b>Bread Making.</b> Bake a spelt loaf with your children and introduce them to a healthy alternative to white bread while teaching them the skils of the baker. Expect flour fights, sticky fingers, and a fresh loaf to take home for tea.</item>
+	</string-array>
+	
+	<string-array name="chil_3">
+		<item>Honey in the City</item>
+		<item>The festival will feature a selection of children’s workshops and demonstrations over the weekend, with a focus on introducing children to the world of food in a practical hands on way. Bring your children to discover how honey is made, join in the bread making workshop, and make your own butter and jam.\n<b>Honey in the City</b> Visit Doctor John\'s portable beehives to find out how bees make their honey.</item>
+	</string-array>
+	
+	<string-array name="chil_4">
+		<item>Jam making / Butter making</item>
+		<item>The festival will feature a selection of children’s workshops and demonstrations over the weekend, with a focus on introducing children to the world of food in a practical hands on way. Bring your children to discover how honey is made, join in the bread making workshop, and make your own butter and jam.\n<b>Jam making</b> If your going to bake bread you need something to spread on it. Bring a bag of fresh or frozen fruit and transform it into a scrumptious sticky jam for your healthy loaf.\n<b>Butter making</b> Learn to make butter from milk, and discover where your spread comes from.</item>
+	</string-array>
+	
+	<!-- 
+		Other
+	 -->
+	<string-array name="other_1">
+	 	<item>The Harvest Food Market</item>
+	 	<item>Spanish Arch is the historical location of Galway\'s once thriving fish market. Sunday will see the area transformed once again into a local farmers harvest market. Market stalls will boast the best of the West local produce including: Vegetables, Meat, Fish, Bread.</item>
+	 </string-array>
+	 
+	 <string-array name="other_2">
+	 	<item>Galway\'s Food Community</item>
+	 	<item>On Friday and Saturday night there will be a host of stalls along Quay street selling a selection of fantastic local produce. Make your way through the heart of Galway and sample the city’s great atmosphere while tasting everything from smoked salmon and oysters to connemara smoked mountain lamb...beidh ocras orth..agus tart.</item>
+	 </string-array>
+	 
+	 <string-array name="other_3">
+	 	<item>The Big Award</item>
+	 	<item>A reception in St. Nicholas Church on Saturday will honour one local food hero in recognition of their contribution to food and the Galway Community.</item>
+	 </string-array>
+	 
+	 <string-array name="other_4">
+	 	<item>The Feast</item>
+	 	<item>Cost - €50 pp\n\nArd Bia will host an dinner celebrating the diversity of Galway\'s Food Culture. Local Produce will feature in a menu specially designed for the festival.</item>
+	 </string-array>
 </resources>

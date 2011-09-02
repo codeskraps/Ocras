@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
@@ -65,7 +66,33 @@ public class EventsActivity extends Activity implements OnClickListener {
 		arrImages.add(R.drawable.taste_background_3);
 		
 		fillLayout(14, layout_theme, arr_theme, arrImages);
+		
+		/*
+		 * Children
+		 */
+		layout_theme = (ViewGroup) findViewById(R.id.linearChildren);
+		arr_theme = (getResources()).getStringArray(R.array.arr_chil);
+		
+		arrImages.clear();
+		arrImages.add(R.drawable.children_background_1);
+		arrImages.add(R.drawable.children_background_2);
+		arrImages.add(R.drawable.children_background_3);
+		
+		fillLayout(19, layout_theme, arr_theme, arrImages);
 
+		/*
+		 * Other
+		 */
+		layout_theme = (ViewGroup) findViewById(R.id.linearOther);
+		arr_theme = (getResources()).getStringArray(R.array.arr_other);
+		
+		arrImages.clear();
+		arrImages.add(R.drawable.other_background_1);
+		arrImages.add(R.drawable.other_background_2);
+		arrImages.add(R.drawable.other_background_3);
+		arrImages.add(R.drawable.other_background_4);
+		
+		fillLayout(23, layout_theme, arr_theme, arrImages);
 	}
 	
 	private void fillLayout (int id, ViewGroup layout_theme, String[] arr_theme,
@@ -75,11 +102,14 @@ public class EventsActivity extends Activity implements OnClickListener {
 
 			LinearLayout lContainer = new LinearLayout(this);
 			lContainer.setOrientation(LinearLayout.HORIZONTAL);
-			lContainer.setLayoutParams(new LayoutParams(140, 140));
-			if(id==0 || id==3 || id==6 || id==8 || id==11 || id==14 || id==17){
+			lContainer.setLayoutParams(new LayoutParams(150, 150));
+			
+			if(id==0 || id==3 || id==6 || id==8 || id==11 || id==14 || id==17 || id==19 || id==22 || id==23){
 				lContainer.setBackgroundResource(arrImages.get(0));
-			}else if(id==1 || id==4 || id==9 || id==12 || id==15 || id==18){
+			}else if(id==1 || id==4 || id==9 || id==12 || id==15 || id==18 || id==20 || id==24){
 				lContainer.setBackgroundResource(arrImages.get(1));
+			}else if(id==26){
+				lContainer.setBackgroundResource(arrImages.get(3));
 			}else{
 				lContainer.setBackgroundResource(arrImages.get(2));
 			}
@@ -118,7 +148,62 @@ public class EventsActivity extends Activity implements OnClickListener {
 	
 		Log.d(TAG, "id: " + v.getId());
 		
-		showDialog(v.getId());
+//		if (v.getId() < 8 ) showContent(v.getId());
+//		else showDialog(v.getId());
+		
+		showContent(v.getId());
+	}
+	
+	private void showContent(int id) {
+		Log.d(TAG, "id: " + id);
+		
+		Resources res = getResources();
+		OcrasData oData = ((OcrasApplication) getApplication()).getoData();
+		
+		switch(id){
+		
+		// Debate
+		case 0: oData.setArr_content(res.getStringArray(R.array.arr_gmf)); break;
+       	case 1: oData.setArr_content(res.getStringArray(R.array.arr_nutrition)); break;
+       	case 2: oData.setArr_content(res.getStringArray(R.array.arr_obesity)); break;
+       	case 3: oData.setArr_content(res.getStringArray(R.array.arr_developing)); break;
+       	case 4: oData.setArr_content(res.getStringArray(R.array.arr_tourism)); break;
+       	case 5: oData.setArr_content(res.getStringArray(R.array.arr_agriculture)); break;
+       	case 6: oData.setArr_content(res.getStringArray(R.array.arr_fisheries)); break;
+       	case 7: oData.setArr_content(res.getStringArray(R.array.arr_safety)); break;
+       	
+       	// Talk
+       	case 8: oData.setArr_content(res.getStringArray(R.array.talk_1)); break;
+       	case 9: oData.setArr_content(res.getStringArray(R.array.talk_2)); break;
+       	case 10: oData.setArr_content(res.getStringArray(R.array.talk_3)); break;
+       	case 11: oData.setArr_content(res.getStringArray(R.array.talk_4)); break;
+       	case 12: oData.setArr_content(res.getStringArray(R.array.talk_5)); break;
+       	case 13: oData.setArr_content(res.getStringArray(R.array.talk_6)); break;
+       	
+       	// Taste
+       	case 14: oData.setArr_content(res.getStringArray(R.array.taste_1)); break;
+       	case 15: oData.setArr_content(res.getStringArray(R.array.taste_2)); break;
+       	case 16: oData.setArr_content(res.getStringArray(R.array.taste_3)); break;
+       	case 17: oData.setArr_content(res.getStringArray(R.array.taste_4)); break;
+       	case 18: oData.setArr_content(res.getStringArray(R.array.taste_5)); break;
+       	
+       	// Children
+       	case 19: oData.setArr_content(res.getStringArray(R.array.chil_1)); break;
+       	case 20: oData.setArr_content(res.getStringArray(R.array.chil_2)); break;
+       	case 21: oData.setArr_content(res.getStringArray(R.array.chil_3)); break;
+       	case 22: oData.setArr_content(res.getStringArray(R.array.chil_4)); break;
+       	
+       	// Other
+       	case 23: oData.setArr_content(res.getStringArray(R.array.other_1)); break;
+       	case 24: oData.setArr_content(res.getStringArray(R.array.other_2)); break;
+       	case 25: oData.setArr_content(res.getStringArray(R.array.other_3)); break;
+       	case 26: oData.setArr_content(res.getStringArray(R.array.other_4)); break;
+		}
+		
+		if (id < 8) oData.setDebate(true);
+		else oData.setDebate(false);
+		
+       	EventsActivity.this.startActivity(new Intent(EventsActivity.this, ContentActivity.class));
 	}
 
 	@Override
@@ -139,19 +224,31 @@ public class EventsActivity extends Activity implements OnClickListener {
        	case 7: return getDebateDialog(res.getStringArray(R.array.arr_safety));
        	
        	// Talk
-       	case 8: return getDialog(res.getString(R.string.talk_title1), res.getString(R.string.talk_synop1));
-       	case 9: return getDialog(res.getString(R.string.talk_title2), res.getString(R.string.talk_synop2));
-       	case 10: return getDialog(res.getString(R.string.talk_title3), res.getString(R.string.talk_synop3));
-       	case 11: return getDialog(res.getString(R.string.talk_title4), res.getString(R.string.talk_synop4));
-       	case 12: return getDialog(res.getString(R.string.talk_title5), res.getString(R.string.talk_synop5));
-       	case 13: return getDialog(res.getString(R.string.talk_title6), res.getString(R.string.talk_synop6));
+       	case 8: return getDialog(res.getStringArray(R.array.talk_1));
+       	case 9: return getDialog(res.getStringArray(R.array.talk_2));
+       	case 10: return getDialog(res.getStringArray(R.array.talk_3));
+       	case 11: return getDialog(res.getStringArray(R.array.talk_4));
+       	case 12: return getDialog(res.getStringArray(R.array.talk_5));
+       	case 13: return getDialog(res.getStringArray(R.array.talk_6));
        	
        	// Taste
-       	case 14: return getDialog(res.getString(R.string.taste_title1), res.getString(R.string.taste_synop1));
-       	case 15: return getDialog(res.getString(R.string.taste_title2), res.getString(R.string.taste_synop2));
-       	case 16: return getDialog(res.getString(R.string.taste_title3), res.getString(R.string.taste_synop3));
-       	case 17: return getDialog(res.getString(R.string.taste_title4), res.getString(R.string.taste_synop4));
-       	case 18: return getDialog(res.getString(R.string.taste_title5), res.getString(R.string.taste_synop5));
+       	case 14: return getDialog(res.getStringArray(R.array.taste_1));
+       	case 15: return getDialog(res.getStringArray(R.array.taste_2));
+       	case 16: return getDialog(res.getStringArray(R.array.taste_3));
+       	case 17: return getDialog(res.getStringArray(R.array.taste_4));
+       	case 18: return getDialog(res.getStringArray(R.array.taste_5));
+       	
+       	// Children
+       	case 19: return getDialog(res.getStringArray(R.array.chil_1));
+       	case 20: return getDialog(res.getStringArray(R.array.chil_2));
+       	case 21: return getDialog(res.getStringArray(R.array.chil_3));
+       	case 22: return getDialog(res.getStringArray(R.array.chil_4));
+       	
+       	// Other
+       	case 23: return getDialog(res.getStringArray(R.array.other_1));
+       	case 24: return getDialog(res.getStringArray(R.array.other_2));
+       	case 25: return getDialog(res.getStringArray(R.array.other_3));
+       	case 26: return getDialog(res.getStringArray(R.array.other_4));
        	
        	default: return null;
 		}
@@ -183,7 +280,7 @@ public class EventsActivity extends Activity implements OnClickListener {
    		return alertDialog;
 	}
 	
-	private AlertDialog getDialog(String s_title, String s_summary) {
+	private AlertDialog getDialog(String[] arr_layouts) {
    		
 		LayoutInflater inflater = (LayoutInflater) EventsActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(R.layout.custom_dialog, (ViewGroup) findViewById(R.id.layout_root));
@@ -193,9 +290,9 @@ public class EventsActivity extends Activity implements OnClickListener {
    		AlertDialog alertDialog = builder.create();
    		
    		TextView text_summary = (TextView) layout.findViewById(R.id.dialog_text_summary);
-   		text_summary.setText(s_summary);
+   		text_summary.setText(arr_layouts[1]);
    		
-   		alertDialog.setTitle(s_title);
+   		alertDialog.setTitle(arr_layouts[0]);
    		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
 

@@ -91,7 +91,10 @@
         	android:text="@string/txt_children" 
         	android:textSize="20sp"
         	android:layout_width="wrap_content" 
-        	android:layout_height="wrap_content" />
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:padding="5dp"
+        	android:background="#80303030" />
         	
 		<HorizontalScrollView
 			android:orientation="horizontal"
@@ -103,17 +106,19 @@
 		    	android:orientation="horizontal"
 				android:layout_width="fill_parent"
 				android:layout_height="fill_parent"
-				android:layout_margin="5dp"
-				android:background="#FFF" />
+				android:layout_margin="5dp" />
 				
 		</HorizontalScrollView>
 		
-		<!-- Market -->
-		<TextView 
-        	android:text="@string/txt_market" 
+		<!-- Other -->
+        <TextView 
+        	android:text="@string/txt_other" 
         	android:textSize="20sp"
         	android:layout_width="wrap_content" 
-        	android:layout_height="wrap_content" />
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:padding="5dp"
+        	android:background="#80303030" />
         	
 		<HorizontalScrollView
 			android:orientation="horizontal"
@@ -121,79 +126,12 @@
 			android:layout_height="fill_parent">
 			
 			<LinearLayout 
-				android:id="@+id/linearMarket"
+				android:id="@+id/linearOther"
 		    	android:orientation="horizontal"
 				android:layout_width="fill_parent"
 				android:layout_height="fill_parent"
-				android:layout_margin="5dp"
-				android:background="#3C3B37" />
-				
+				android:layout_margin="5dp" />
+		
 		</HorizontalScrollView>
-		
-		<!-- Commnunity -->
-		<TextView 
-        	android:text="@string/txt_community" 
-        	android:textSize="20sp"
-        	android:layout_width="wrap_content" 
-        	android:layout_height="wrap_content" />
-        	
-		<HorizontalScrollView
-			android:orientation="horizontal"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent">
-			
-			<LinearLayout 
-				android:id="@+id/linearCommnunity"
-		    	android:orientation="horizontal"
-				android:layout_width="fill_parent"
-				android:layout_height="fill_parent"
-				android:layout_margin="5dp"
-				android:background="#3C3B37" />
-				
-		</HorizontalScrollView>
-		
-		<!-- Award -->
-		<TextView 
-        	android:text="@string/txt_award" 
-        	android:textSize="20sp"
-        	android:layout_width="wrap_content" 
-        	android:layout_height="wrap_content" />
-        	
-		<HorizontalScrollView
-			android:orientation="horizontal"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent">
-			
-			<LinearLayout 
-				android:id="@+id/linearAward"
-		    	android:orientation="horizontal"
-				android:layout_width="fill_parent"
-				android:layout_height="fill_parent"
-				android:layout_margin="5dp"
-				android:background="#3C3B37" />
-				
-		</HorizontalScrollView>	
-		
-		<!-- Feast -->
-		<TextView 
-        	android:text="@string/txt_feast" 
-        	android:textSize="20sp"
-        	android:layout_width="wrap_content" 
-        	android:layout_height="wrap_content" />
-        	
-		<HorizontalScrollView
-			android:orientation="horizontal"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent">
-			
-			<LinearLayout 
-				android:id="@+id/linearFeast"
-		    	android:orientation="horizontal"
-				android:layout_width="fill_parent"
-				android:layout_height="fill_parent"
-				android:layout_margin="5dp"
-				android:background="#3C3B37" />
-				
-		</HorizontalScrollView>	
 	</LinearLayout>
 </ScrollView>

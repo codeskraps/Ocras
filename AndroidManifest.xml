@@ -29,6 +29,11 @@
         	android:name=".EventsActivity"
         	android:label="@string/app_name" />
         	
+        <activity 
+        	android:name=".ContentActivity"
+        	android:label="@string/app_name"
+        	android:theme="@style/Theme.Translucent" />
+        	
        	<activity
        		android:name=".CalendarActivity"
        		android:label="@string/app_name" />

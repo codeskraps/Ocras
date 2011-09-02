@@ -23,48 +23,11 @@
 -->
 
 <resources>
-	<style name="LinearLayoutImageLauncher">
-		<item name="android:orientation">vertical</item>
-		<item name="android:layout_height">fill_parent</item>
-		<item name="android:layout_width">fill_parent</item>
-		<item name="android:layout_weight">1</item>
-	</style>
-	
-	<style name="ImageLauncher">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_gravity">center_horizontal</item>
-		<item name="android:layout_weight">1</item>
-	</style>
-	
-	<style name="ImageMain">
-		<item name="android:layout_width">fill_parent</item>
-		<item name="android:layout_height">200dp</item>
-		<item name="android:layout_weight">1</item>  
-		<item name="android:layout_marginLeft">10dp</item>
-		<item name="android:layout_marginRight">10dp</item>
-		<item name="android:layout_marginBottom">10dp</item>
-		<item name="android:layout_marginTop">20dp</item>
-	</style>
-	
-	<style name="TextMain">
-		<item name="android:textSize">15sp</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_margin">20dp</item>
-	</style>
-	
-	<style name="TextLauncher">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<!-- <item name="android:layout_weight">1</item> -->
-		<item name="android:layout_gravity">center</item>
-		<item name="android:typeface">monospace</item>
-		<item name="android:textStyle">bold</item>
-		<item name="android:textSize">15dp</item>
-		<item name="android:shadowColor">#696969</item>
-		<item name="android:shadowRadius">1.5</item>
-		<item name="android:shadowDx">1.5</item>
-		<item name="android:shadowDy">1.5</item>
-	</style>
+	<drawable name="transparent_background">#99000000</drawable>
+
+	<style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
 </resources>
