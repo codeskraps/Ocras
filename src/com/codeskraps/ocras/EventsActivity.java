@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,11 +21,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class EventsActivity extends Activity implements OnClickListener {
+	
+	int width, color;
+	
 	private static final String TAG = EventsActivity.class.getSimpleName();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		Display display = getWindowManager().getDefaultDisplay(); 
+		width = (int) (display.getWidth() / 3);
+		color = display.getWidth() / 30;
+		//int height = display.getHeight();
 		
 		setContentView(R.layout.event);
 		
@@ -102,7 +111,7 @@ public class EventsActivity extends Activity implements OnClickListener {
 
 			LinearLayout lContainer = new LinearLayout(this);
 			lContainer.setOrientation(LinearLayout.HORIZONTAL);
-			lContainer.setLayoutParams(new LayoutParams(150, 150));
+			lContainer.setLayoutParams(new LayoutParams(width, width));
 			
 			if(id==0 || id==3 || id==6 || id==8 || id==11 || id==14 || id==17 || id==19 || id==22 || id==23){
 				lContainer.setBackgroundResource(arrImages.get(0));
@@ -116,7 +125,7 @@ public class EventsActivity extends Activity implements OnClickListener {
 			
 			LinearLayout lColor = new LinearLayout(this);
 			lColor.setOrientation(LinearLayout.VERTICAL);
-			lColor.setLayoutParams(new LayoutParams(10, LayoutParams.FILL_PARENT));
+			lColor.setLayoutParams(new LayoutParams(color, LayoutParams.FILL_PARENT));
 			lColor.setBackgroundResource(R.color.debate_background);
 			
 			LinearLayout lText = new LinearLayout(this);

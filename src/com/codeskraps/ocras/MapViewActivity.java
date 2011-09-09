@@ -39,7 +39,7 @@ public class MapViewActivity extends MapActivity {
 		mapView.setBuiltInZoomControls(true);
 		mapView.setStreetView(true);
 		mapController = mapView.getController();
-		mapController.setZoom(16); // Zoon 1 is world view
+		mapController.setZoom(15); // Zoon 1 is world view
 		
 		GPSupdateInterval = 5000;
         GPSmoveInterval = 1;
